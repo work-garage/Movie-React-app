@@ -11,7 +11,7 @@ const MovieSearch = () => {
 
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API_KEY}&t=${query}`
+        `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API_KEY}&t=${query}`
       );
       if (!response.ok) throw new Error("Network response was not ok");
       const data = await response.json();
