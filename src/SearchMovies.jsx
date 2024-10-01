@@ -5,10 +5,13 @@ function SearchMovies({ addHistory, historySaved }) {
 
   const searchMovie = async (e) => {
     e.preventDefault();
-    const url = `http://www.omdbapi.com/?apikey=1d6e9251&t=${movieTitle}`; //For links use backticks(``) not single quotes('')
+    //For links use backticks(``) not single quotes('')
 
     try {
-      const response = await fetch(url); //fetch("_")    fetch data from url
+      const response = await fetch(
+        `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API_KEY}&t=Inception`
+      );
+      //fetch("_")    fetch data from url
       const data = await response.json(); //val.json()  convert data to json
       addHistory(data);
       console.log(historySaved);
