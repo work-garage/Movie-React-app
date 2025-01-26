@@ -1,7 +1,7 @@
 import React from "react";
 import MovieList from "./MovieList";
 
-const History = ({ historySaved }) => {
+const History = ({ historySaved}) => {
   return (
     <div>
       <h4>History</h4>

@@ -1,0 +1,29 @@
+.card{
+    background-color:#333333;
+    margin:10px;
+    padding:40px;
+    border: 2px solid;
+    border-color:skyblue;
+    border-radius: 15px;
+    box-shadow: 15px 10px 10px rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+.card:hover{
+    background-color:#555555;
+}
+.card2 {
+    position: absolute;
+    bottom: 10px; 
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 17px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card2 {
+    opacity: 1;
+}

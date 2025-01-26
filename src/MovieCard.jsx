@@ -1,20 +1,21 @@
 import React from "react";
+import './MovieCard.css';
 
 const MovieCard = ({ val }) => {
   return (
-    <div>
-      <li>
-        <img src={val.Poster} alt={"Movie" + val.Title + "img"} />
-        <div>
-          <p>{val.Title}</p>
+    <div className="card">
+        <img style={{height:"500px", width:"350px"}} src={val.Poster} alt={"Movie " + val.Title + " img"} />
+        <div style={{ textAlign: "left", marginLeft: "20px", width:"350px" }}>
+          <p style={{ fontWeight:"900", width:"350px"}}>{val.Title}</p>
           <p>{val.Awards}</p>
-          <p>{val.Rated}</p>
-          <p>{val.Released}</p>
-          <p>{val.Director}</p>
-          <button>Remove from History</button>
+          <p>{"Rating: " + val.Rated}</p>
+          <p>{"Release Date: " + val.Released}</p>
+          <p style={{ width:"350px"}}>{"Director: " + val.Director}</p>
           <hr />
         </div>
-      </li>
+        <div className="card2">
+        <p>{"Plot: " + val.Plot}</p>
+        </div>
     </div>
   );
 };
