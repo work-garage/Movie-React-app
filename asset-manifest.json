@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Web-Works/static/css/main.f855e6bc.css",
-    "main.js": "/Web-Works/static/js/main.e7408aed.js",
-    "static/js/453.f2f68e03.chunk.js": "/Web-Works/static/js/453.f2f68e03.chunk.js",
-    "index.html": "/Web-Works/index.html",
-    "main.f855e6bc.css.map": "/Web-Works/static/css/main.f855e6bc.css.map",
-    "main.e7408aed.js.map": "/Web-Works/static/js/main.e7408aed.js.map",
-    "453.f2f68e03.chunk.js.map": "/Web-Works/static/js/453.f2f68e03.chunk.js.map"
+    "main.css": "/Movie-React-app/static/css/main.73181d7d.css",
+    "main.js": "/Movie-React-app/static/js/main.3981093b.js",
+    "static/js/453.f2f68e03.chunk.js": "/Movie-React-app/static/js/453.f2f68e03.chunk.js",
+    "static/media/movie.png": "/Movie-React-app/static/media/movie.0fae254a5e98b8af84f9.png",
+    "index.html": "/Movie-React-app/index.html",
+    "main.73181d7d.css.map": "/Movie-React-app/static/css/main.73181d7d.css.map",
+    "main.3981093b.js.map": "/Movie-React-app/static/js/main.3981093b.js.map",
+    "453.f2f68e03.chunk.js.map": "/Movie-React-app/static/js/453.f2f68e03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e7408aed.js"
+    "static/css/main.73181d7d.css",
+    "static/js/main.3981093b.js"
   ]
 }
