@@ -7,13 +7,14 @@ function SearchMovies({ addHistory, historySaved }) {
 
   const searchMovie = async (e) => {
     e.preventDefault();
-    const url = `https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=1d6e9251&t=${movieTitle}`;
+    const url = process.env.url
+
 
     try {
       const response = await fetch(url, {
         method: "GET", // Ensures we're making a GET request
         headers: {
-          Origin: window.location.origin, // This is required by the CORS proxy
+          Origin: window.location.origin, // This is required by the CORS proxy                    //WHY?
           "X-Requested-With": "XMLHttpRequest", // This header is sometimes required as well
         },
       });
